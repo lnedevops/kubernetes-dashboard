@@ -264,7 +264,7 @@ kubectl create secret generic kubernetes-dashboard-certs --from-file="./dashboar
 官方提供的部署文件：
 [https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.1/aio/deploy/recommended.yaml](https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.1/aio/deploy/recommended.yaml)
 
-> 这里由于我已经创建了命名空间和secret，所以将这两个部分注释掉
+> 这里由于我已经创建了命名空间和secret，所以将这两个部分注释掉，dashboard服务暴露方式改为Nodeport，对外暴露端口为30001
 
 ```yaml
 # Copyright 2017 The Kubernetes Authors.
